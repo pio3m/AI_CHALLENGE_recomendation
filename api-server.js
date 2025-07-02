@@ -109,7 +109,7 @@ app.post('/api/openai', async (req, res) => {
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // SPA fallback – dla każdej innej ścieżki zwróć index.html
-app.get('*', (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
