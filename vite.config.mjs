@@ -12,7 +12,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5000,
     allowedHosts: [
-      '3d5ead26-6d64-4c23-9f60-2416f1299b36-00-3f4xw4ciu0t5e.riker.replit.dev'
+      '3d5ead26-6d64-4c23-9f60-2416f1299b36-00-3f4xw4ciu0t5e.riker.replit.dev',
+      'ai-challenge-recomendation.onrender.com'
     ],
     proxy: {
       "/api/emotions": {
